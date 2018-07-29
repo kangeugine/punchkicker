@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PunchKicker, Instructions for Annotation
+title: PunchKicker
 ---
 
 ## Instructions for Annotation
