@@ -80,5 +80,9 @@ def submit():
         return json.dumps(({'success': True}, 200, 
                {'ContentType': 'application/json'}))
 
+@application.route('/instruction', methods=['GET'])
+def instruction():
+    return render_template('instruction-annotation.html')
+
 if __name__ == '__main__':
     application.run(host='0.0.0.0')

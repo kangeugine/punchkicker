@@ -1,0 +1,61 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PunchKicker</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main jumbotron for instructions -->
+<div class="jumbotron">
+  <div class="container">
+    <h3>Instructions for Annotation</h3>
+    <p>
+      <b>1. Red vs Blue Fighter</b>
+      <br/>
+      Color of fighter is indicated by the tape color on the fighter's wrist
+      <br/><br/>
+      <img src="https://s3-us-west-2.amazonaws.com/rating-instructions/instruction-annotation-red.png" class="img-fluid center-block" alt="Responsive image" width="800">
+      <img src="https://s3-us-west-2.amazonaws.com/rating-instructions/instruction-annotation-blue.png" class="img-fluid center-block" alt="Responsive image" width="800">
+      <br/>
+      Fighter's name on the bottom center also indicates the fighter's color
+      <br/>
+      Left side is red and right side is blue, but this require knowledge of the fighter
+      <br/><br/>
+      <img src="https://s3-us-west-2.amazonaws.com/rating-instructions/instructions-annotation-colorbyname.png" class="img-fluid center-block" alt="Responsive image" width="800">
+      <br/>
+      When in doubt "refresh" browser to work on a different frame
+    </p>
+    <p>
+      <b>2. Do as many rectangles as you want</b>
+      <br/>
+      At least one is required to "submit"
+      <br/><br/>
+      <img src="https://s3-us-west-2.amazonaws.com/rating-instructions/instruction-annotation-finish.png" class="img-fluid center-block" alt="Responsive image" width="800">
+      <br/>
+    </p>
+    <p>
+      <b>3. Provide e-mail as your id and click "submit"</b>
+      <br/>
+      Click "reset" anytime you want to start fresh
+    </p>
+    <a class="btn btn-primary btn-md pull-right" href="{{ url_for('index') }}" role="button">Back to Annotation &raquo;
+    </a>
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo pt-0">
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 1% 15% 1%;">
+    <div class="footer-copyright py-3 text-center">
+      🤜🏿🤛
+    </div>
+</footer>
+
+</div>
+{% endblock %}
